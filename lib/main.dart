@@ -2,13 +2,15 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:restos/pages/Home.dart';
+import 'package:carousel_pro/carousel_pro.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key ? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -18,12 +20,15 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Rs'),
-          ),
-          body: const HomePage(),
-        ));
+        // home: Scaffold(
+        //   appBar: AppBar(
+        //     title: const Text('Rs'),
+        //   ),
+        //   body: const HomePage(),
+        // )
+      home: MainPage(),
+
+        );
   }
 }
 
